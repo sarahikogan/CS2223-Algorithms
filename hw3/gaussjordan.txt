@@ -1,0 +1,5 @@
+1. Explain why the (repaired) ForwardElimination algorithm on 
+page 210 of Levitin fails to provide a solution for: 
+
+The repaired ForwardElimination algorithm on page 210 fails to provide
+a solution for 

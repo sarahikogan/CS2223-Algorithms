@@ -1,0 +1,16 @@
+QUESTION 1
+
+The repaired ForwardElimination algorithm on page 210 of Levitin 
+doesn't provide a solution for the given problem because it doesn't 
+implement partial pivoting, so it doesn't implement the easiest way 
+to solve the problem. 
+BetterForwardElimination does implement partial pivoting, so there 
+is no danger of running into an error where the computer automatically
+rounds the values and creates an issue. 
+
+QUESTION 2
+
+BetterForwardElimination fails to provide a solution to this equation
+because it does not easily lend itself to creating an upper triangle 
+in the matrix. 
+

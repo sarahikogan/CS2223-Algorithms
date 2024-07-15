@@ -1,0 +1,95 @@
+
+
+find each permutation 
+    check the sum of each permutation 
+    if valid, add the permutation to the LinkedList and increase the counter
+
+/* 
+
+        for (int a = 0; a < 16; a++) {
+
+            for (int b = (a+1); b < 16; b++) {
+
+                for (int c = (b+1); c < 16; c++) {
+
+                    for (int d = (c+1); d < 16; d++) {
+
+                        int[] temp = {a, b, c, d};
+
+                        if (permutationSum(temp) == 33) {
+
+                            System.out.println(permutationSum(temp));
+                            System.out.println(a + " " + b + " " + c + " " + d);
+
+                        }
+                    }
+                }
+            }
+        }
+        */
+
+        /*
+     * int getPermutations(int length, int sum)
+     * Gets all permutations that equal the sum, of the given length, recursively
+     * Prints permutations
+     */
+
+     /* 
+    
+    static int[] temp;
+
+    static int a = 0;
+
+    static int getPermutations(int length, int sum, int start, int count) {
+
+
+        if (count < length) {             // counter is less than the length, generate a permutation
+
+
+            for (int i = start; i < 16; i++) {  // run the function again, with increased start
+
+
+                a += i;
+                getPermutations(length, sum, start+1, count+1);
+
+            }
+
+        } else {                        // check permutation
+
+            if (permutationSum(temp) == 33) {
+
+                System.out.println(permutationSum(temp));
+                System.out.println(temp[0] + " " + temp[1] + " " + temp[2] + " " + temp[3] + " ");
+
+                countFours++;
+
+
+            }
+        }
+
+        return countFours; 
+
+    }
+
+    
+
+    static void getPermutations(int oflength, int sum) {
+
+        int[] temp = new int[4];
+
+        for (int i = 0; i<oflength; i++) {         // outer loop: how many times to go through it 
+
+
+            for (int a=i; a < 16; a++) {
+
+                temp[i] = a;
+
+                System.out.println(a + "\t" + temp[i]);
+
+
+                
+            }
+        }
+    }
+
+    */

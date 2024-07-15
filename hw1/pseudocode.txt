@@ -1,0 +1,50 @@
+ANSWERS: 
+
+1. This is called the Nim game, or the subtraction game. It was 
+"solved" by Charles Bouton in 1901. 
+
+
+PART 1: 
+
+let the user enter who plays first
+let the user alternate with the computer 
+    to enter legal moves 
+let the computer declare a winner
+
+PSEUDOCODE CLEANUP: 
+
+***imports 
+create the game board 
+
+main
+    create a scanner 
+    print first line and take in user input for first player
+    run the game 
+
+runGame 
+    initializers: color, number, current player 
+    while nobody has won 
+
+        player's turn 
+            open scanner 
+            get user's color
+                if invalid, ask for another input
+            get user's number 
+                if invalid, ask for another input 
+            switch to computer 
+        
+        computer's turn 
+            get a random color using an array
+                if invalid, get another input until valid 
+            get a random number (within range)
+            switch to player
+
+        print out results: how many were taken out and what color 
+        decrease color by the number 
+
+        print out the current board 
+
+    print out the winner 
+
+checkWinner
+    add all colors together and check if they equal 0, return true if yes 
